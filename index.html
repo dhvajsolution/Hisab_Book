@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hisab Book – Expense & Income Manager | Track Every Rupee</title>
+  <meta name="description" content="Hisab Book is the smartest cashbook app for Indian businesses. Track income, manage customer dues, and generate PDF reports instantly. Free on Google Play." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════ NAVBAR ═══════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="#home">
+      <img src="icon.png" class="logo-img" alt="Hisab Book" />
+      <span>Hisab<strong>Book</strong></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#screens">Screenshots</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="privacy-policy.html">Privacy</a></li>
+    </ul>
+    <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.dhvaj.hisabbook" target="_blank"><i class="fab fa-google-play"></i> Download Free</a>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#features" onclick="closeMobile()">Features</a>
+    <a href="#screens" onclick="closeMobile()">Screenshots</a>
+    <a href="#how-it-works" onclick="closeMobile()">How It Works</a>
+    <a href="privacy-policy.html" onclick="closeMobile()">Privacy</a>
+    <a href="https://play.google.com/store/apps/details?id=com.dhvaj.hisabbook" target="_blank" class="mob-cta" onclick="closeMobile()"><i class="fab fa-google-play"></i> Download Free</a>
+  </div>
+</nav>
+
+<!-- ═══════════ HERO (no phone — world-class split layout) ═══════════ -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="grid-lines"></div>
+  </div>
+
+  <div class="hero-inner">
+    <!-- Left: Rich text content -->
+    <div class="hero-left" data-reveal>
+      <div class="hero-eyebrow">
+        <img src="icon.png" alt="Hisab Book" class="hero-icon" />
+        <span>Smart • Simple • Secure</span>
+      </div>
+
+      <h1 class="hero-h1">
+        Track Every Rupee.<br />
+        <span class="g-text">Manage with Clarity.</span>
+      </h1>
+
+      <p class="hero-p">Replace your paper Bahi Khata with India's most beautiful cashbook app. Customers, cashflow, PDF reports — all in one, completely free.</p>
+
+      <!-- Feature pills -->
+      <div class="hero-features">
+        <div class="hf-pill"><i class="fas fa-chart-line"></i> Track Transactions</div>
+        <div class="hf-pill"><i class="fas fa-users"></i> Customer Ledgers</div>
+        <div class="hf-pill"><i class="fas fa-file-pdf"></i> PDF Reports</div>
+        <div class="hf-pill"><i class="fas fa-wifi-slash"></i> Works Offline</div>
+        <div class="hf-pill"><i class="fab fa-google-drive"></i> Cloud Backup</div>
+        <div class="hf-pill"><i class="fas fa-lock"></i> PIN Lock</div>
+      </div>
+
+      <!-- CTA buttons -->
+      <div class="hero-btns" id="download">
+        <a href="https://play.google.com/store/apps/details?id=com.dhvaj.hisabbook" target="_blank" class="btn-play">
+          <i class="fab fa-google-play fa-lg"></i>
+          <div><small>Get it on</small><strong>Google Play</strong></div>
+        </a>
+        <a href="#screens" class="btn-ghost"><i class="fas fa-mobile-screen"></i> See Screenshots</a>
+      </div>
+
+      <!-- Trust row -->
+      <div class="hero-trust">
+        <span><i class="fas fa-circle-check"></i> No Registration</span>
+        <span><i class="fas fa-circle-check"></i> 100% Free</span>
+        <span><i class="fas fa-circle-check"></i> No Internet Required</span>
+        <span><i class="fas fa-circle-check"></i> Local Data Storage</span>
+      </div>
+    </div>
+
+    <!-- Right: Feature Image (16:9 Play Store graphic) -->
+    <div class="hero-right" data-reveal data-delay="200">
+      <div class="feature-img-wrap">
+        <div class="fi-glow"></div>
+        <img src="feature Image.png" alt="Hisab Book App Preview" class="feature-img" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="scroll-hint">
+    <div class="scroll-mouse"><div class="scroll-dot-inner"></div></div>
+  </div>
+</section>
+
+<!-- ═══════════ TRUST STRIP ═══════════ -->
+<div class="trust-strip">
+  <div class="ts-marquee-wrap">
+    <div class="ts-marquee-track">
+      <!-- Original 6 -->
+      <div class="ts-i"><i class="fas fa-wifi-slash"></i> Works Offline</div>
+      <div class="ts-i"><i class="fab fa-google-drive"></i> Cloud Backup</div>
+      <div class="ts-i"><i class="fas fa-file-pdf"></i> PDF Reports</div>
+      <div class="ts-i"><i class="fas fa-lock"></i> PIN Protected</div>
+      <div class="ts-i"><i class="fas fa-language"></i> Multi-Language</div>
+      <div class="ts-i"><i class="fas fa-briefcase"></i> Multi-Business</div>
+      <!-- Duplicated 6 -->
+      <div class="ts-i"><i class="fas fa-wifi-slash"></i> Works Offline</div>
+      <div class="ts-i"><i class="fab fa-google-drive"></i> Cloud Backup</div>
+      <div class="ts-i"><i class="fas fa-file-pdf"></i> PDF Reports</div>
+      <div class="ts-i"><i class="fas fa-lock"></i> PIN Protected</div>
+      <div class="ts-i"><i class="fas fa-language"></i> Multi-Language</div>
+      <div class="ts-i"><i class="fas fa-briefcase"></i> Multi-Business</div>
+      <!-- Duplicated 6 again for extra safety -->
+      <div class="ts-i"><i class="fas fa-wifi-slash"></i> Works Offline</div>
+      <div class="ts-i"><i class="fab fa-google-drive"></i> Cloud Backup</div>
+      <div class="ts-i"><i class="fas fa-file-pdf"></i> PDF Reports</div>
+      <div class="ts-i"><i class="fas fa-lock"></i> PIN Protected</div>
+      <div class="ts-i"><i class="fas fa-language"></i> Multi-Language</div>
+      <div class="ts-i"><i class="fas fa-briefcase"></i> Multi-Business</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ FEATURES ═══════════ -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <div class="sec-tag">Why Hisab Book?</div>
+      <h2>Built for Indian businesses.<br /><span class="g-text">Loved by thousands.</span></h2>
+    </div>
+    <div class="bento-grid">
+      <!-- Top Row -->
+      <div class="bento-card wide" data-reveal data-delay="0">
+        <div class="b-ico ico-blue"><i class="fas fa-chart-line"></i></div>
+        <div class="b-text">
+          <h3>Track Transactions Instantly</h3>
+          <p>Record income, expenses, due amounts, and advances with our lightning-fast calculator keypad. Zero accounting knowledge required to maintain perfect books.</p>
+        </div>
+      </div>
+      <div class="bento-card sq" data-reveal data-delay="100">
+        <div class="b-ico ico-green"><i class="fas fa-users"></i></div>
+        <div class="b-text">
+          <h3>Customer Ledgers</h3>
+          <p>Maintain crystal clear Due & Advance accounts per customer.</p>
+        </div>
+      </div>
+      
+      <!-- Middle Row -->
+      <div class="bento-card sq" data-reveal data-delay="0">
+        <div class="b-ico ico-orange"><i class="fas fa-chart-pie"></i></div>
+        <div class="b-text">
+          <h3>Visual Reports</h3>
+          <p>Beautiful donut charts and cashflow graphs to understand finances at a glance.</p>
+        </div>
+      </div>
+      <div class="bento-card wide dark-wide" data-reveal data-delay="100">
+        <div class="b-ico" style="background:var(--blue); color:#fff; box-shadow:0 10px 20px var(--blue-g)"><i class="fas fa-file-pdf"></i></div>
+        <div class="b-text">
+          <h3 style="color:#fff">Professional PDF Statements</h3>
+          <p style="color:rgba(255,255,255,.7)">Generate one-tap, highly professional PDF statements. Share them directly with customers or accountants via WhatsApp instantly.</p>
+        </div>
+      </div>
+      
+      <!-- Bottom Row -->
+      <div class="bento-card wide-half" data-reveal data-delay="0">
+        <div class="b-ico ico-purple"><i class="fab fa-google-drive"></i></div>
+        <div class="b-text">
+          <h3>Cloud Backup</h3>
+          <p>Automated Google Drive backups. Your data is perfectly safe even if you change phones.</p>
+        </div>
+      </div>
+      <div class="bento-card wide-half" data-reveal data-delay="100">
+        <div class="b-ico ico-teal"><i class="fas fa-shield-halved"></i></div>
+        <div class="b-text">
+          <h3>100% Private</h3>
+          <p>Local-first SQLite storage with PIN lock. Your data never leaves your device without permission.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SCREENSHOTS (real images) ═══════════ -->
+<section class="screens-sec" id="screens">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <div class="sec-tag sec-tag-dark">App Screenshots</div>
+      <h2 style="color:#fff">Every screen crafted <span class="g-text">to perfection.</span></h2>
+      <p class="sec-sub">Real screenshots from the app — what you see is what you get.</p>
+    </div>
+
+    <!-- Portrait screenshots: Carousel -->
+    <div class="screens-carousel">
+      <button class="sc-arrow sc-prev" id="scArrPrev" aria-label="Previous Screenshot"><i class="fas fa-chevron-left"></i></button>
+      <div class="screenshots-track" id="screensTrack">
+      <div class="sg-item">
+        <img src="Hisab Book 1.png" alt="Home Screen – Dark Mode" loading="lazy" />
+        <div class="sg-caption">Home Screen</div>
+      </div>
+      <div class="sg-item">
+        <img src="Hisab Book 2.png" alt="Customer Detail Screen" loading="lazy" />
+        <div class="sg-caption">Customer Detail</div>
+      </div>
+      <div class="sg-item">
+        <img src="Hisab Book 3.png" alt="Add Transaction Screen" loading="lazy" />
+        <div class="sg-caption">Add Transaction</div>
+      </div>
+      <div class="sg-item">
+        <img src="Hisab Book 4.png" alt="Cash Flow Screen" loading="lazy" />
+        <div class="sg-caption">Cash Flow</div>
+      </div>
+      <div class="sg-item">
+        <img src="Hisab Book 5.png" alt="Add Income Screen" loading="lazy" />
+        <div class="sg-caption">Add Income</div>
+      </div>
+      <div class="sg-item">
+        <img src="Hisab Book 6.png" alt="Reports Screen" loading="lazy" />
+        <div class="sg-caption">Reports</div>
+      </div>
+      <div class="sg-item">
+        <img src="Hisab Book 7.png" alt="Analytics Screen" loading="lazy" />
+        <div class="sg-caption">Analytics</div>
+      </div>
+      <div class="sg-item">
+        <img src="Hisab Book 8.png" alt="Settings Screen" loading="lazy" />
+        <div class="sg-caption">Settings</div>
+      </div>
+      </div>
+      <button class="sc-arrow sc-next" id="scArrNext" aria-label="Next Screenshot"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ HOW IT WORKS ═══════════ -->
+<section class="how" id="how-it-works">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <div class="sec-tag">Simple Steps</div>
+      <h2>Up and running in <span class="g-text">under 60 seconds.</span></h2>
+    </div>
+    <div class="how-row">
+      <div class="how-card" data-reveal data-delay="0">
+        <div class="how-num">01</div>
+        <div class="how-ico"><i class="fab fa-google-play"></i></div>
+        <h3>Download Free</h3>
+        <p>Install Hisab Book from Google Play. No sign-up needed. Open and go.</p>
+      </div>
+      <div class="how-arr" data-reveal><i class="fas fa-arrow-right"></i></div>
+      <div class="how-card" data-reveal data-delay="100">
+        <div class="how-num">02</div>
+        <div class="how-ico"><i class="fas fa-briefcase"></i></div>
+        <h3>Add Your Business</h3>
+        <p>Name your business and start tracking. Supports multiple businesses at once.</p>
+      </div>
+      <div class="how-arr" data-reveal><i class="fas fa-arrow-right"></i></div>
+      <div class="how-card" data-reveal data-delay="200">
+        <div class="how-num">03</div>
+        <div class="how-ico"><i class="fas fa-plus-circle"></i></div>
+        <h3>Add Transactions</h3>
+        <p>Use the fast keypad. Record income, expenses, dues, and advances in seconds.</p>
+      </div>
+      <div class="how-arr" data-reveal><i class="fas fa-arrow-right"></i></div>
+      <div class="how-card" data-reveal data-delay="300">
+        <div class="how-num">04</div>
+        <div class="how-ico"><i class="fas fa-chart-bar"></i></div>
+        <h3>View & Share</h3>
+        <p>Get visual reports and share PDF statements with customers via WhatsApp instantly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CTA ═══════════ -->
+<section class="cta-sec">
+  <div class="cta-glow"></div>
+  <div class="cta-body" data-reveal>
+    <img src="icon.png" alt="Hisab Book" class="cta-icon" />
+    <h2>Your business deserves<br /><span class="g-text">the smartest cashbook.</span></h2>
+    <p>Start your free digital Bahi Khata today. No registration. No internet required.</p>
+    <a href="https://play.google.com/store/apps/details?id=com.dhvaj.hisabbook" target="_blank" class="btn-play">
+      <i class="fab fa-google-play fa-lg"></i>
+      <div><small>Download on</small><strong>Google Play — Free</strong></div>
+    </a>
+    <div class="cta-tags">
+      <span><i class="fas fa-circle-check"></i> No Registration</span>
+      <span><i class="fas fa-circle-check"></i> Works Offline</span>
+      <span><i class="fas fa-circle-check"></i> 100% Free</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#home" class="logo" style="display:inline-flex; align-items:center; margin-bottom:20px; color:#fff; font-size:1.8rem; letter-spacing:-0.5px; gap:12px;">
+        <img src="icon.png" class="logo-img" alt="Hisab Book" style="width:42px; height:42px; border-radius:12px; box-shadow:0 4px 16px rgba(79,107,255,0.3);" />
+        <span>Hisab<strong>Book</strong></span>
+      </a>
+      <p>India's most beautiful cashbook and expense manager. Track every rupee, grow every business.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>App</h4>
+        <a href="#features">Features</a>
+        <a href="#screens">Screenshots</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="https://play.google.com/store/apps/details?id=com.dhvaj.hisabbook" target="_blank">Download</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:hisabbook04@gmail.com"><i class="fas fa-envelope"></i> hisabbook04@gmail.com</a>
+        <div style="margin-top:16px; color:rgba(255,255,255,.3); font-size:0.8rem;">
+          Made with <i class="fas fa-heart" style="color:#F04438"></i> by<br />
+          <a href="https://dhvajsolution.com" target="_blank" style="color:var(--blue); font-weight:600;">Dhvaj Solution</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-btm">&copy; 2026 Hisab Book. All rights reserved.</div>
+  <div class="footer-huge-text">HISAB BOOK</div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose"><i class="fas fa-times"></i></button>
+  <button class="lb-prev" id="lbPrev"><i class="fas fa-chevron-left"></i></button>
+  <div class="lb-img-wrap"><img id="lbImg" src="" alt="" /></div>
+  <button class="lb-next" id="lbNext"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

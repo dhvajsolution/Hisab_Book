@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Hisab Book</title>
+    <meta name="description" content="Privacy Policy for Hisab Book app." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════ NAVBAR ═══════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">
+      <img src="icon.png" class="logo-img" alt="Hisab Book" />
+      <span>Hisab<strong>Book</strong></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#screens">Screenshots</a></li>
+      <li><a href="index.html#how-it-works">How It Works</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+    <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.dhvaj.hisabbook" target="_blank"><i class="fab fa-google-play"></i> Download Free</a>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#features" onclick="closeMobile()">Features</a>
+    <a href="index.html#screens" onclick="closeMobile()">Screenshots</a>
+    <a href="index.html#how-it-works" onclick="closeMobile()">How It Works</a>
+    <a href="terms.html" onclick="closeMobile()">Terms</a>
+    <a href="https://play.google.com/store/apps/details?id=com.dhvaj.hisabbook" target="_blank" class="mob-cta" onclick="closeMobile()"><i class="fab fa-google-play"></i> Download Free</a>
+  </div>
+</nav>
+
+<!-- ═══════════ PAGE HEADER ═══════════ -->
+<header class="page-header">
+  <div class="ph-tag">Legal Info</div>
+  <h1>Privacy Policy</h1>
+  <p>How we handle your information securely and locally.</p>
+</header>
+
+<!-- ═══════════ POLICY CONTENT ═══════════ -->
+<div class="policy-wrap">
+  <div class="doc-grid">
+    <aside class="doc-sidebar">
+      <h3>Contents</h3>
+      <nav class="doc-nav">
+        <a href="#intro" class="active">Introduction</a>
+        <a href="#data">1. Data Collection</a>
+        <a href="#third-party">2. Third-Party Services</a>
+        <a href="#permissions">3. Permissions</a>
+        <a href="#google-api">4. Google API Services</a>
+        <a href="#deletion">5. Data Deletion</a>
+        <a href="#security">6. Data Security</a>
+        <a href="#changes">7. Changes</a>
+        <a href="#contact">8. Contact Us</a>
+      </nav>
+      <div class="doc-support-card">
+        <h4>Need Help?</h4>
+        <p>Our support team is available to assist you with any privacy concerns.</p>
+        <a href="mailto:hisabbook04@gmail.com" class="doc-support-btn"><i class="fas fa-headset"></i> Contact Us</a>
+      </div>
+    </aside>
+
+    <div class="doc-content">
+      <div class="doc-card" id="intro">
+        <div class="doc-card-header">
+          <div class="doc-card-icon"><i class="fas fa-info-circle"></i></div>
+          <h2>Introduction</h2>
+        </div>
+        <span class="last-updated" style="display:block; margin-top:-10px; margin-bottom:20px; color:var(--sub); font-size:0.95rem;">Last Updated: August 2026</span>
+        <p>This Privacy Policy explains how Hisab Book ("we", "us", or "our") handles your information when you use our mobile application ("App"). We are committed to protecting your privacy and ensuring your financial data remains completely under your control.</p>
+      </div>
+
+      <div class="doc-card" id="data">
+        <div class="doc-card-header">
+          <div class="doc-card-icon"><i class="fas fa-database"></i></div>
+          <h2>1. Data Collection and Storage</h2>
+        </div>
+        <p><strong>Local Storage:</strong> Hisab Book operates on a strict "local-first" architecture. All your personal data, customer details, transactions, and financial records are stored securely in a local database (SQLite) directly on your physical device. <strong>We do not collect, read, or transmit your financial data to our servers.</strong></p>
+        <p><strong>Analytics:</strong> We may collect non-personally identifiable crash reports and usage statistics to improve app stability and performance.</p>
+      </div>
+
+      <div class="doc-card" id="third-party">
+        <div class="doc-card-header">
+          <div class="doc-card-icon"><i class="fas fa-network-wired"></i></div>
+          <h2>2. Third-Party Services</h2>
+        </div>
+        <p>The App uses third-party services that may collect information used to identify you. By using the App, you agree to the privacy practices of these third-party service providers:</p>
+        <ul>
+            <li><strong><a href="https://policies.google.com/privacy" target="_blank">Google Play Services</a>:</strong> Used for core application functionality and security.</li>
+            <li><strong><a href="https://support.google.com/admob/answer/6128543" target="_blank">Google AdMob</a>:</strong> We use AdMob to display advertisements within the App to keep it free. AdMob may use advertising identifiers to serve personalized ads based on your interests. You can opt out of personalized advertising by visiting your Google Ad Settings.</li>
+        </ul>
+      </div>
+
+      <div class="doc-card" id="permissions">
+        <div class="doc-card-header">
+          <div class="doc-card-icon"><i class="fas fa-unlock-keyhole"></i></div>
+          <h2>3. Permissions</h2>
+        </div>
+        <p>Our App requires specific permissions to function correctly. We only request permissions necessary for core features:</p>
+        <ul>
+            <li><strong>Storage/File Access:</strong> Required to generate PDF reports of your transactions and to facilitate local database backups and restores.</li>
+            <li><strong>Internet Access:</strong> Required to sync backups to your Google Drive and to serve advertisements via AdMob.</li>
+        </ul>
+      </div>
+
+      <div class="doc-card" id="google-api">
+        <div class="doc-card-header">
+          <div class="doc-card-icon"><i class="fab fa-google-drive"></i></div>
+          <h2>4. Google API Services</h2>
+        </div>
+        <p>If you choose to use the automated backup feature, Hisab Book will request access to your Google Drive via Google API Services.</p>
+        <p>Hisab Book's use and transfer to any other app of information received from Google APIs will adhere to the <strong><a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a></strong>, including the Limited Use requirements.</p>
+        <p>Your backup data is uploaded exclusively to a hidden app data folder in your personal Google Drive. We do not process, read, or share your backup files with any third parties.</p>
+      </div>
+
+      <div class="doc-card" id="deletion">
+        <div class="doc-card-header">
+          <div class="doc-card-icon"><i class="fas fa-trash-can"></i></div>
+          <h2>5. Data Deletion</h2>
+        </div>
+        <p>Because Hisab Book is an offline application, you have complete control over your data deletion at all times. We do not hold your data on any central server.</p>
+        <p>To permanently delete your data:</p>
+        <ul>
+            <li><strong>Local Data:</strong> Simply uninstall the app, or clear the app data via your Android Settings > Apps > Hisab Book > Storage > Clear Data.</li>
+            <li><strong>Cloud Backups:</strong> Open your Google Drive app, go to Settings > Manage Backup, and delete the backup associated with Hisab Book.</li>
+        </ul>
+      </div>
+
+      <div class="doc-card" id="security">
+        <div class="doc-card-header">
+          <div class="doc-card-icon"><i class="fas fa-shield-halved"></i></div>
+          <h2>6. Data Security</h2>
+        </div>
+        <p>We value your trust. Since the data resides exclusively on your device, the security of your information primarily depends on the physical and digital security of your device. We highly recommend using a screen lock, PIN, or biometric authentication to secure your phone, and utilizing Hisab Book's built-in App PIN Lock feature.</p>
+      </div>
+
+      <div class="doc-card" id="changes">
+        <div class="doc-card-header">
+          <div class="doc-card-icon"><i class="fas fa-file-contract"></i></div>
+          <h2>7. Changes to This Privacy Policy</h2>
+        </div>
+        <p>We may update our Privacy Policy from time to time. We advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+      </div>
+
+      <div class="doc-card" id="contact">
+        <div class="doc-card-header">
+          <div class="doc-card-icon"><i class="fas fa-envelope"></i></div>
+          <h2>8. Contact Us</h2>
+        </div>
+        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
+        <p><a href="mailto:hisabbook04@gmail.com"><i class="fas fa-envelope"></i> hisabbook04@gmail.com</a></p>
+        
+        <p style="margin-top: 40px; padding-top:24px; border-top:1px solid rgba(0,0,0,.05);">
+            For additional details on usage, please read our <a href="terms.html">Terms & Conditions</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo" style="display:inline-flex; align-items:center; margin-bottom:20px; color:#fff; font-size:1.8rem; letter-spacing:-0.5px; gap:12px;">
+        <img src="icon.png" class="logo-img" alt="Hisab Book" style="width:42px; height:42px; border-radius:12px; box-shadow:0 4px 16px rgba(79,107,255,0.3);" />
+        <span>Hisab<strong>Book</strong></span>
+      </a>
+      <p>India's most beautiful cashbook and expense manager. Track every rupee, grow every business.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>App</h4>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#screens">Screenshots</a>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="https://play.google.com/store/apps/details?id=com.dhvaj.hisabbook" target="_blank">Download</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:hisabbook04@gmail.com"><i class="fas fa-envelope"></i> hisabbook04@gmail.com</a>
+        <div style="margin-top:16px; color:rgba(255,255,255,.3); font-size:0.8rem;">
+          Made with <i class="fas fa-heart" style="color:#F04438"></i> by<br />
+          <a href="https://dhvajsolution.com" target="_blank" style="color:var(--blue); font-weight:600;">Dhvaj Solution</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-btm">&copy; 2026 Hisab Book. All rights reserved.</div>
+  <div class="footer-huge-text">HISAB BOOK</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
