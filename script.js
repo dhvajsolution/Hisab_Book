@@ -131,3 +131,21 @@ if (screensTrack && scArrPrev && scArrNext) {
     }
   }, 3000);
 }
+
+// ─── DOCS SIDEBAR TRACKING ──────────────────
+const docCards = document.querySelectorAll('.doc-card');
+const docNavLinks = document.querySelectorAll('.doc-nav a');
+
+if (docCards.length > 0 && docNavLinks.length > 0) {
+  const docObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        docNavLinks.forEach(a => a.classList.remove('active'));
+        const activeLink = document.querySelector(`.doc-nav a[href="#${entry.target.id}"]`);
+        if (activeLink) activeLink.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-130px 0px -60% 0px' });
+
+  docCards.forEach(card => docObs.observe(card));
+}
