@@ -21,6 +21,7 @@
     </a>
     <ul class="nav-links">
       <li><a href="#features">Features</a></li>
+      <li><a href="#split">Trip Split</a></li>
       <li><a href="#screens">Screenshots</a></li>
       <li><a href="#how-it-works">How It Works</a></li>
       <li><a href="privacy-policy.html">Privacy</a></li>
@@ -30,6 +31,7 @@
   </div>
   <div class="mobile-menu" id="mobileMenu">
     <a href="#features" onclick="closeMobile()">Features</a>
+    <a href="#split" onclick="closeMobile()">Trip Split</a>
     <a href="#screens" onclick="closeMobile()">Screenshots</a>
     <a href="#how-it-works" onclick="closeMobile()">How It Works</a>
     <a href="privacy-policy.html" onclick="closeMobile()">Privacy</a>
@@ -69,6 +71,7 @@
         <div class="hf-pill"><i class="fas fa-wifi-slash"></i> Works Offline</div>
         <div class="hf-pill"><i class="fab fa-google-drive"></i> Cloud Backup</div>
         <div class="hf-pill"><i class="fas fa-lock"></i> PIN Lock</div>
+        <div class="hf-pill"><i class="fas fa-plane-departure"></i> Trip Split</div>
       </div>
 
       <!-- CTA buttons -->
@@ -115,20 +118,17 @@
       <div class="ts-i"><i class="fas fa-lock"></i> PIN Protected</div>
       <div class="ts-i"><i class="fas fa-language"></i> Multi-Language</div>
       <div class="ts-i"><i class="fas fa-briefcase"></i> Multi-Business</div>
-      <!-- Duplicated 6 -->
+      <div class="ts-i"><i class="fas fa-plane-departure"></i> Trip Split</div>
+      <div class="ts-i"><i class="fas fa-qrcode"></i> QR Join</div>
+      <!-- Duplicated -->
       <div class="ts-i"><i class="fas fa-wifi-slash"></i> Works Offline</div>
       <div class="ts-i"><i class="fab fa-google-drive"></i> Cloud Backup</div>
       <div class="ts-i"><i class="fas fa-file-pdf"></i> PDF Reports</div>
       <div class="ts-i"><i class="fas fa-lock"></i> PIN Protected</div>
       <div class="ts-i"><i class="fas fa-language"></i> Multi-Language</div>
       <div class="ts-i"><i class="fas fa-briefcase"></i> Multi-Business</div>
-      <!-- Duplicated 6 again for extra safety -->
-      <div class="ts-i"><i class="fas fa-wifi-slash"></i> Works Offline</div>
-      <div class="ts-i"><i class="fab fa-google-drive"></i> Cloud Backup</div>
-      <div class="ts-i"><i class="fas fa-file-pdf"></i> PDF Reports</div>
-      <div class="ts-i"><i class="fas fa-lock"></i> PIN Protected</div>
-      <div class="ts-i"><i class="fas fa-language"></i> Multi-Language</div>
-      <div class="ts-i"><i class="fas fa-briefcase"></i> Multi-Business</div>
+      <div class="ts-i"><i class="fas fa-plane-departure"></i> Trip Split</div>
+      <div class="ts-i"><i class="fas fa-qrcode"></i> QR Join</div>
     </div>
   </div>
 </div>
@@ -188,9 +188,245 @@
           <p>Local-first SQLite storage with PIN lock. Your data never leaves your device without permission.</p>
         </div>
       </div>
+      <!-- NEW: Trip Split bento card -->
+      <div class="bento-card wide split-bento-card" data-reveal data-delay="0">
+        <div class="b-ico ico-trip"><i class="fas fa-plane-departure"></i></div>
+        <div class="b-text">
+          <h3>Trip Group Expense Splitting <span class="new-badge">NEW</span></h3>
+          <p>Going on a trip with friends? Create a group, add members, record expenses, and let Hisab Book instantly calculate who owes whom. Share the join link or QR code — no app sign-up needed to join!</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- ═══════════ TRIP SPLIT — APP-ACCURATE REDESIGN ═══════════ -->
+<section class="split-sec" id="split">
+  <div class="split-noise"></div>
+
+  <div class="container split-container">
+
+    <!-- ── LEFT COLUMN: Header + Features ── -->
+    <div class="split-left">
+
+      <div class="split-eyebrow" data-reveal>
+        <span class="split-dot"></span>
+        <span>New · Group Trip Expense</span>
+      </div>
+
+      <h2 class="split-h2" data-reveal>
+        Travel together,<br />
+        <span class="split-accent">settle smarter.</span>
+      </h2>
+
+      <p class="split-p" data-reveal>
+        Going on a trip? Create a group, everyone logs what they paid, and Hisab Book instantly tells you who owes whom. No math. No drama.
+      </p>
+
+      <!-- Steps — same exact layout as the app's "How it works" -->
+      <div class="split-steps-v" data-reveal>
+        <div class="split-step-v">
+          <div class="ssv-line-wrap">
+            <div class="ssv-ico" style="background:rgba(79,107,255,.15); color:#4F6BFF;">
+              <i class="fas fa-plus-circle"></i>
+            </div>
+            <div class="ssv-connector"></div>
+          </div>
+          <div class="ssv-body">
+            <h5>Create the Trip</h5>
+            <p>Name your trip, enter your name as Host. A unique 6-digit code and QR is generated instantly.</p>
+          </div>
+        </div>
+        <div class="split-step-v">
+          <div class="ssv-line-wrap">
+            <div class="ssv-ico" style="background:rgba(124,58,237,.15); color:#7C3AED;">
+              <i class="fas fa-qrcode"></i>
+            </div>
+            <div class="ssv-connector"></div>
+          </div>
+          <div class="ssv-body">
+            <h5>Invite Friends</h5>
+            <p>Share the QR or link via WhatsApp. Friends join with one tap — no sign-up required.</p>
+          </div>
+        </div>
+        <div class="split-step-v">
+          <div class="ssv-line-wrap">
+            <div class="ssv-ico" style="background:rgba(18,183,106,.15); color:#12B76A;">
+              <i class="fas fa-receipt"></i>
+            </div>
+            <div class="ssv-connector"></div>
+          </div>
+          <div class="ssv-body">
+            <h5>Log Expenses</h5>
+            <p>Each member adds what they paid — hotel, food, transport. Everything tracked in real time.</p>
+          </div>
+        </div>
+        <div class="split-step-v">
+          <div class="ssv-line-wrap">
+            <div class="ssv-ico" style="background:rgba(247,144,9,.15); color:#F79009;">
+              <i class="fas fa-scale-balanced"></i>
+            </div>
+          </div>
+          <div class="ssv-body">
+            <h5>Auto Settle</h5>
+            <p>Hisab Book calculates the perfect settlement. See exactly who pays whom — and done.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="split-cta-row" data-reveal>
+        <a href="https://play.google.com/store/apps/details?id=com.dhvaj.hisabbook" target="_blank" class="btn-play">
+          <i class="fab fa-google-play fa-lg"></i>
+          <div><small>Get it free on</small><strong>Google Play</strong></div>
+        </a>
+        <div class="split-pills-inline">
+          <span><i class="fas fa-user-shield"></i> Host Controls</span>
+          <span><i class="fas fa-cloud"></i> Cloud Sync</span>
+          <span><i class="fas fa-bolt"></i> Real-time</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── RIGHT COLUMN: Exact App Screen Mockup ── -->
+    <div class="split-right" data-reveal>
+
+      <!-- Phone shell -->
+      <div class="app-shell">
+
+        <!-- Status bar -->
+        <div class="app-status-bar">
+          <span>9:41</span>
+          <div class="app-status-icons">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+          </div>
+        </div>
+
+        <!-- App Bar — exact copy from app code -->
+        <div class="app-bar">
+          <div class="app-bar-back"><i class="fas fa-chevron-left"></i></div>
+          <span class="app-bar-title">Goa Trip 🌴</span>
+          <div class="app-bar-actions">
+            <div class="app-bar-btn app-bar-qr"><i class="fas fa-qr-code"></i></div>
+            <div class="app-bar-btn"><i class="fas fa-ellipsis-vertical"></i></div>
+          </div>
+        </div>
+
+        <!-- Summary Card — gradient #4F6BFF → #738AFF (exact from app) -->
+        <div class="app-summary-card">
+          <div class="asc-col">
+            <span class="asc-label">Total Spent</span>
+            <span class="asc-value">₹12,480</span>
+          </div>
+          <div class="asc-divider"></div>
+          <div class="asc-col">
+            <span class="asc-label">Per Person</span>
+            <span class="asc-value asc-value-sm">₹3,120</span>
+          </div>
+        </div>
+
+        <!-- Members section label -->
+        <div class="app-sec-row">
+          <span class="app-sec-label">Members</span>
+          <span class="app-sec-count">4 people</span>
+        </div>
+
+        <!-- Member Cards — exact design from _MemberCard widget -->
+        <div class="app-member-card">
+          <div class="amc-avatar" style="background:rgba(79,107,255,.15); color:#4F6BFF;">R</div>
+          <div class="amc-info">
+            <span class="amc-name">Rahul <span class="amc-me">(Me · Host)</span></span>
+            <span class="amc-sub"><i class="fas fa-receipt"></i> Paid ₹4,800</span>
+          </div>
+          <div class="amc-right">
+            <div class="amc-chip chip-green">+₹1,680</div>
+            <span class="amc-status">gets back</span>
+          </div>
+          <i class="fas fa-chevron-right amc-arrow"></i>
+        </div>
+
+        <div class="app-member-card">
+          <div class="amc-avatar" style="background:rgba(124,58,237,.15); color:#7C3AED;">P</div>
+          <div class="amc-info">
+            <span class="amc-name">Priya</span>
+            <span class="amc-sub"><i class="fas fa-receipt"></i> Paid ₹3,500</span>
+          </div>
+          <div class="amc-right">
+            <div class="amc-chip chip-red">-₹380</div>
+            <span class="amc-status">owes</span>
+          </div>
+          <i class="fas fa-chevron-right amc-arrow"></i>
+        </div>
+
+        <div class="app-member-card">
+          <div class="amc-avatar" style="background:rgba(18,183,106,.15); color:#12B76A;">A</div>
+          <div class="amc-info">
+            <span class="amc-name">Arjun</span>
+            <span class="amc-sub"><i class="fas fa-receipt"></i> Paid ₹2,700</span>
+          </div>
+          <div class="amc-right">
+            <div class="amc-chip chip-red">-₹420</div>
+            <span class="amc-status">owes</span>
+          </div>
+          <i class="fas fa-chevron-right amc-arrow"></i>
+        </div>
+
+        <!-- Settlements label -->
+        <div class="app-sec-row" style="margin-top:14px;">
+          <i class="fas fa-sync-alt" style="color:#636366; font-size:.75rem; margin-right:6px;"></i>
+          <span class="app-sec-label">Settlements</span>
+        </div>
+
+        <!-- Settlement Card — exact from _SettlementCard -->
+        <div class="app-settlement-card">
+          <div class="asettle-from">
+            <span>Priya</span>
+            <small>pays</small>
+          </div>
+          <div class="asettle-amount">
+            <i class="fas fa-arrow-right"></i> ₹380
+          </div>
+          <div class="asettle-to">
+            <span>Rahul</span>
+            <small>receives</small>
+          </div>
+        </div>
+
+        <div class="app-settlement-card">
+          <div class="asettle-from">
+            <span>Arjun</span>
+            <small>pays</small>
+          </div>
+          <div class="asettle-amount">
+            <i class="fas fa-arrow-right"></i> ₹420
+          </div>
+          <div class="asettle-to">
+            <span>Rahul</span>
+            <small>receives</small>
+          </div>
+        </div>
+
+      </div><!-- /app-shell -->
+
+      <!-- Floating QR invite chip -->
+      <div class="split-qr-chip">
+        <div class="sqc-qr">
+          <i class="fas fa-qrcode"></i>
+        </div>
+        <div class="sqc-text">
+          <strong>Scan to Join</strong>
+          <span>Share via WhatsApp</span>
+        </div>
+        <div class="sqc-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
 <!-- ═══════════ SCREENSHOTS (real images) ═══════════ -->
 <section class="screens-sec" id="screens">
